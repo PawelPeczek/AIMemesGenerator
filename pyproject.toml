@@ -9,7 +9,15 @@ packages = [{include = "ai_memes"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+openai = "^0.25.0"
+numpy = "^1.20"
+opencv-python = "^4.6.0"
 
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+mypy = "^0.971"
+pytest = "^7.1.0"
 
 [build-system]
 requires = ["poetry-core"]
