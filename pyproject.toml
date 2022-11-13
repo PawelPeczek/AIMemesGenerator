@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "ai-memes"
+version = "0.1.0"
+description = "Simple tool to generate memes with AI"
+authors = ["Paweł Pęczek <pawel.m.peczek@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "ai_memes"}]
+
+[tool.poetry.scripts]
+ai_memes_generator = "ai_memes.core:generate_memes"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+openai = "^0.25.0"
+numpy = "^1.20"
+opencv-python = "^4.6.0"
+pyyaml = "^6.0"
+retry = "^0.9.0"
+requests = "^2.28"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+mypy = "^0.971"
+pytest = "^7.1.0"
+pre-commit = "^2.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
