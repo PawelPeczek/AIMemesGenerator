@@ -12,12 +12,14 @@ python = "^3.8"
 openai = "^0.25.0"
 numpy = "^1.20"
 opencv-python = "^4.6.0"
+pyyaml = "^6.0"
 
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.8.0"
 mypy = "^0.971"
 pytest = "^7.1.0"
+pre-commit = "^2.20.0"
 
 [build-system]
 requires = ["poetry-core"]
