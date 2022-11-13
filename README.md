@@ -17,6 +17,16 @@ pip install git+https://github.com/PawelPeczek/AIMemesGenerator.git
 ```
 
 ## Usage example
+
+### Prerequisites
+To use the tool - you must create [OpenAI API](https://openai.com/api/) account and then export API key in environment
+variable:
+```bash
+export OPENAI_API_KEY=<your_api_key>
+```
+
+### Command
+
 ```bash
 ai_memes_generator \
   --title "Cats and dogs" \
